@@ -1,0 +1,164 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Sample Task",
+      "description": "This is a sample task",
+      "status": "TODO",
+      "priority": "MEDIUM",
+      "dueDate": "2026-03-20",
+      "createdAt": "2026-03-12T00:00:00.000Z",
+      "assignedTo": 1
+    },
+    {
+      "id": 2,
+      "title": "Design UI mockups",
+      "description": "Create wireframes and mockups for the dashboard",
+      "status": "IN_PROGRESS",
+      "priority": "HIGH",
+      "dueDate": "2026-03-18",
+      "createdAt": "2026-03-10T00:00:00.000Z",
+      "assignedTo": 2
+    },
+    {
+      "id": 3,
+      "title": "Setup database",
+      "description": "Initialize MongoDB database and create collections",
+      "status": "DONE",
+      "priority": "HIGH",
+      "dueDate": "2026-03-08",
+      "createdAt": "2026-03-01T00:00:00.000Z",
+      "assignedTo": 3
+    },
+    {
+      "id": 4,
+      "title": "Implement authentication",
+      "description": "Add JWT authentication to the API",
+      "status": "IN_PROGRESS",
+      "priority": "HIGH",
+      "dueDate": "2026-03-22",
+      "createdAt": "2026-03-05T00:00:00.000Z",
+      "assignedTo": 4
+    },
+    {
+      "id": 5,
+      "title": "Write unit tests",
+      "description": "Create unit tests for all service methods",
+      "status": "TODO",
+      "priority": "MEDIUM",
+      "dueDate": "2026-03-25",
+      "createdAt": "2026-03-12T00:00:00.000Z",
+      "assignedTo": 5
+    },
+    {
+      "id": 6,
+      "title": "Code review",
+      "description": "Review pull requests from team members",
+      "status": "IN_PROGRESS",
+      "priority": "MEDIUM",
+      "dueDate": "2026-03-14",
+      "createdAt": "2026-03-11T00:00:00.000Z",
+      "assignedTo": 1
+    },
+    {
+      "id": 7,
+      "title": "Fix login bug",
+      "description": "Resolve issue with login timeout",
+      "status": "DONE",
+      "priority": "HIGH",
+      "dueDate": "2026-03-10",
+      "createdAt": "2026-03-02T00:00:00.000Z",
+      "assignedTo": 2
+    },
+    {
+      "id": 8,
+      "title": "Update documentation",
+      "description": "Update API documentation with new endpoints",
+      "status": "TODO",
+      "priority": "LOW",
+      "dueDate": "2026-03-30",
+      "createdAt": "2026-03-12T00:00:00.000Z",
+      "assignedTo": 3
+    },
+    {
+      "id": 9,
+      "title": "Optimize database queries",
+      "description": "Improve query performance for large datasets",
+      "status": "TODO",
+      "priority": "MEDIUM",
+      "dueDate": "2026-04-01",
+      "createdAt": "2026-03-12T00:00:00.000Z",
+      "assignedTo": 4
+    },
+    {
+      "id": 10,
+      "title": "Setup CI/CD pipeline",
+      "description": "Configure GitHub Actions for automated testing",
+      "status": "DONE",
+      "priority": "HIGH",
+      "dueDate": "2026-03-09",
+      "createdAt": "2026-02-28T00:00:00.000Z",
+      "assignedTo": 5
+    },
+    {
+      "id": 11,
+      "title": "Create user profiles",
+      "description": "Implement user profile management feature",
+      "status": "IN_PROGRESS",
+      "priority": "MEDIUM",
+      "dueDate": "2026-03-20",
+      "createdAt": "2026-03-08T00:00:00.000Z",
+      "assignedTo": 1
+    },
+    {
+      "id": 12,
+      "title": "Add notifications",
+      "description": "Implement email notification system",
+      "status": "TODO",
+      "priority": "LOW",
+      "dueDate": "2026-04-05",
+      "createdAt": "2026-03-12T00:00:00.000Z",
+      "assignedTo": 2
+    },
+    {
+      "id": 13,
+      "title": "Security audit",
+      "description": "Perform security audit and fix vulnerabilities",
+      "status": "TODO",
+      "priority": "HIGH",
+      "dueDate": "2026-04-15",
+      "createdAt": "2026-03-12T00:00:00.000Z",
+      "assignedTo": 3
+    },
+    {
+      "id": 14,
+      "title": "Mobile app design",
+      "description": "Design responsive layout for mobile devices",
+      "status": "IN_PROGRESS",
+      "priority": "MEDIUM",
+      "dueDate": "2026-03-28",
+      "createdAt": "2026-03-07T00:00:00.000Z",
+      "assignedTo": 4
+    },
+    {
+      "id": 15,
+      "title": "Deploy to production",
+      "description": "Deploy application to production environment",
+      "status": "TODO",
+      "priority": "HIGH",
+      "dueDate": "2026-04-10",
+      "createdAt": "2026-03-12T00:00:00.000Z",
+      "assignedTo": 5
+    },
+    {
+      "id": 16,
+      "title": "Task 1",
+      "description": "Get things done for evening!",
+      "status": "IN_PROGRESS",
+      "priority": "HIGH",
+      "dueDate": "2026-03-19",
+      "createdAt": "2026-03-18T04:16:04.772Z",
+      "assignedTo": 2
+    }
+  ]
+}
