@@ -48,7 +48,7 @@
       "priority": "MEDIUM",
       "dueDate": "2026-03-25",
       "createdAt": "2026-03-12T00:00:00.000Z",
-      "assignedTo": 5
+      "assignedTo": 2
     },
     {
       "id": 6,
@@ -118,7 +118,7 @@
       "priority": "LOW",
       "dueDate": "2026-04-05",
       "createdAt": "2026-03-12T00:00:00.000Z",
-      "assignedTo": 2
+      "assignedTo": 5
     },
     {
       "id": 13,
@@ -159,6 +159,26 @@
       "dueDate": "2026-03-19",
       "createdAt": "2026-03-18T04:16:04.772Z",
       "assignedTo": 2
+    },
+    {
+      "id": 17,
+      "title": "My  tasks 1",
+      "description": "Get things done",
+      "status": "TODO",
+      "priority": "MEDIUM",
+      "dueDate": "2026-03-25",
+      "createdAt": "2026-03-23T04:57:47.153Z",
+      "assignedTo": 5
+    },
+    {
+      "id": 18,
+      "title": "My Task 2",
+      "description": "Get remaining func. implementation done",
+      "status": "IN_PROGRESS",
+      "priority": "HIGH",
+      "dueDate": "2027-10-18",
+      "createdAt": "2026-03-23T05:03:17.780Z",
+      "assignedTo": 4
     }
   ]
 }

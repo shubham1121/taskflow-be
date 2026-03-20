@@ -90,6 +90,14 @@ app.get("/tasks", (req, res) => {
   res.json(tasks);
 });
 
+app.get("/tasks/user/:userId", (req, res) => {
+  const userId = parseInt(req.params.userId);
+  const tasksData = fs.readFileSync("./db-local/task-list.json");
+  const tasks = JSON.parse(tasksData).tasks;
+  const userTasks = tasks.filter((task) => task.assignedTo === userId);
+  res.json(userTasks);
+});
+
 // Add a new task
 app.post("/tasks", (req, res) => {
   const { title, description, status, assignedTo, priority, dueDate } = req.body;
