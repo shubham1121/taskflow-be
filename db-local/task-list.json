@@ -174,11 +174,11 @@
       "id": 18,
       "title": "My Task 2",
       "description": "Get remaining func. implementation done",
-      "status": "IN_PROGRESS",
-      "priority": "HIGH",
+      "status": "TODO",
+      "priority": "MEDIUM",
       "dueDate": "2027-10-18",
       "createdAt": "2026-03-23T05:03:17.780Z",
-      "assignedTo": 4
+      "assignedTo": 5
     }
   ]
 }

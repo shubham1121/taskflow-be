@@ -130,9 +130,9 @@ app.get("/tasks/:id", (req, res) => {
 });
 
 // Update a task
-app.put("/tasks/:id", (req, res) => {
-  const taskId = parseInt(req.params.id);
-  const { title, description, status, assignedTo, priority, dueDate } = req.body;
+app.put("/tasks", (req, res) => {
+  const { id, title, description, status, assignedTo, priority, dueDate } = req.body;
+  const taskId = parseInt(id);
   const tasksData = fs.readFileSync("./db-local/task-list.json");
   let tasks = JSON.parse(tasksData).tasks;
   const taskIndex = tasks.findIndex((task) => task.id === taskId);
