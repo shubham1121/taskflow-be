@@ -3,6 +3,7 @@ import cors from "cors";
 import { UserModel } from "./models/user-model.js";
 import { TaskStatusEnum } from "./constants/task-status-enum.js";
 import { TaskModel } from "./models/task-model.js";
+import { TaskPriorityEnum } from "./constants/task-priority-enum.js";
 import fs from "fs";
 
 const app = express();
@@ -114,6 +115,44 @@ app.post("/tasks", (req, res) => {
     JSON.stringify({ tasks }, null, 2),
   );
   res.status(201).json(newTask);
+});
+
+// Get task count by status or priority
+app.get("/tasks/count", (req, res) => {
+  const { groupBy } = req.query;
+  if (!groupBy || !['status', 'priority'].includes(groupBy)) {
+    return res.status(400).json({ message: "Query parameter 'groupBy' is required and must be 'status' or 'priority'" });
+  }
+  const tasksData = fs.readFileSync("./db-local/task-list.json");
+  const tasks = JSON.parse(tasksData).tasks;
+
+  if (groupBy === 'status') {
+    const statusCount = {
+      [TaskStatusEnum.TODO]: 0,
+      [TaskStatusEnum.IN_PROGRESS]: 0,
+      [TaskStatusEnum.DONE]: 0,
+    };
+    tasks.forEach((task) => {
+      if (statusCount.hasOwnProperty(task.status)) {
+        statusCount[task.status]++;
+      }
+    });
+    return res.json(statusCount);
+  }
+
+  if (groupBy === 'priority') {
+    const priorityCount = {
+      [TaskPriorityEnum.LOW]: 0,
+      [TaskPriorityEnum.MEDIUM]: 0,
+      [TaskPriorityEnum.HIGH]: 0,
+    };
+    tasks.forEach((task) => {
+      if (priorityCount.hasOwnProperty(task.priority)) {
+        priorityCount[task.priority]++;
+      }
+    });
+    return res.json(priorityCount);
+  }
 });
 
 // Get task by ID

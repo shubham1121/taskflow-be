@@ -38,7 +38,7 @@
       "priority": "HIGH",
       "dueDate": "2026-03-22",
       "createdAt": "2026-03-05T00:00:00.000Z",
-      "assignedTo": 4
+      "assignedTo": 2
     },
     {
       "id": 5,
@@ -61,16 +61,6 @@
       "assignedTo": 1
     },
     {
-      "id": 7,
-      "title": "Fix login bug",
-      "description": "Resolve issue with login timeout",
-      "status": "DONE",
-      "priority": "HIGH",
-      "dueDate": "2026-03-10",
-      "createdAt": "2026-03-02T00:00:00.000Z",
-      "assignedTo": 2
-    },
-    {
       "id": 8,
       "title": "Update documentation",
       "description": "Update API documentation with new endpoints",
@@ -88,7 +78,7 @@
       "priority": "MEDIUM",
       "dueDate": "2026-04-01",
       "createdAt": "2026-03-12T00:00:00.000Z",
-      "assignedTo": 4
+      "assignedTo": 1
     },
     {
       "id": 10,
@@ -138,7 +128,7 @@
       "priority": "MEDIUM",
       "dueDate": "2026-03-28",
       "createdAt": "2026-03-07T00:00:00.000Z",
-      "assignedTo": 4
+      "assignedTo": 3
     },
     {
       "id": 15,
@@ -159,26 +149,6 @@
       "dueDate": "2026-03-19",
       "createdAt": "2026-03-18T04:16:04.772Z",
       "assignedTo": 2
-    },
-    {
-      "id": 17,
-      "title": "My  tasks 1",
-      "description": "Get things done",
-      "status": "TODO",
-      "priority": "MEDIUM",
-      "dueDate": "2026-03-25",
-      "createdAt": "2026-03-23T04:57:47.153Z",
-      "assignedTo": 5
-    },
-    {
-      "id": 18,
-      "title": "My Task 2",
-      "description": "Get remaining func. implementation done",
-      "status": "TODO",
-      "priority": "MEDIUM",
-      "dueDate": "2027-10-18",
-      "createdAt": "2026-03-23T05:03:17.780Z",
-      "assignedTo": 5
     }
   ]
 }
