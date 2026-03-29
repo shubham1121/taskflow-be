@@ -111,16 +111,6 @@
       "assignedTo": 5
     },
     {
-      "id": 13,
-      "title": "Security audit",
-      "description": "Perform security audit and fix vulnerabilities",
-      "status": "TODO",
-      "priority": "HIGH",
-      "dueDate": "2026-04-15",
-      "createdAt": "2026-03-12T00:00:00.000Z",
-      "assignedTo": 3
-    },
-    {
       "id": 14,
       "title": "Mobile app design",
       "description": "Design responsive layout for mobile devices",
@@ -139,16 +129,6 @@
       "dueDate": "2026-04-10",
       "createdAt": "2026-03-12T00:00:00.000Z",
       "assignedTo": 5
-    },
-    {
-      "id": 16,
-      "title": "Task 1",
-      "description": "Get things done for evening!",
-      "status": "IN_PROGRESS",
-      "priority": "HIGH",
-      "dueDate": "2026-03-19",
-      "createdAt": "2026-03-18T04:16:04.772Z",
-      "assignedTo": 2
     }
   ]
 }

@@ -37,7 +37,8 @@ app.post("/users", (req, res) => {
   }
   const usersData = fs.readFileSync("./db-local/users.json");
   const users = JSON.parse(usersData).users;
-  const newUser = new UserModel(users.length + 1, name, email);
+  const newId = users.length > 0 ? Math.max(...users.map(u => u.id)) + 1 : 1;
+  const newUser = new UserModel(newId, name, email);
   users.push(newUser);
   fs.writeFileSync("./db-local/users.json", JSON.stringify({ users }, null, 2));
   res.status(201).json(newUser);
@@ -108,7 +109,8 @@ app.post("/tasks", (req, res) => {
   }
   const tasksData = fs.readFileSync("./db-local/task-list.json");
   const tasks = JSON.parse(tasksData).tasks;
-  const newTask = new TaskModel(tasks.length + 1, title, description, status, assignedTo, priority, dueDate);
+  const newId = tasks.length > 0 ? Math.max(...tasks.map(t => t.id)) + 1 : 1;
+  const newTask = new TaskModel(newId, title, description, status, assignedTo, priority, dueDate);
   tasks.push(newTask);
   fs.writeFileSync(
     "./db-local/task-list.json",
